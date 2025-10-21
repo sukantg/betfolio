@@ -47,14 +47,34 @@ export default function BuilderPage() {
         }),
       })
 
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.error || `HTTP error! status: ${response.status}`)
+      }
+
       const data = await response.json()
+      
+      if (!data.weights || !Array.isArray(data.weights)) {
+        throw new Error("Invalid response format from AI")
+      }
+
       applyAIWeights(data.weights)
       setAiRecommendation({
         expectedEV: data.expectedEV,
         confidence: data.confidence,
       })
+
+      toast({
+        title: "AI Optimization Complete!",
+        description: `Optimized weights with ${data.expectedEV}% expected value`,
+      })
     } catch (error) {
-      console.error("[v0] AI optimization failed:", error)
+      console.error("[OpenAI] AI optimization failed:", error)
+      toast({
+        title: "AI Optimization Failed",
+        description: error instanceof Error ? error.message : "Failed to optimize weights. Please check your OpenAI API key.",
+        variant: "destructive",
+      })
     } finally {
       setIsOptimizing(false)
     }
