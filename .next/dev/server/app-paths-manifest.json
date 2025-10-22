@@ -1,0 +1,7 @@
+{
+  "/api/markets/route": "app/api/markets/route.js",
+  "/api/parlay/place/route": "app/api/parlay/place/route.js",
+  "/markets/page": "app/markets/page.js",
+  "/page": "app/page.js",
+  "/parlay/page": "app/parlay/page.js"
+}

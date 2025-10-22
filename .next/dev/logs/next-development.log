@@ -1,0 +1,43 @@
+[00:00:02.798] Server  LOG     
+[00:00:02.799] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:02.799] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:02.799] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:02.800] Server  LOG     
+[00:00:02.800] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:02.800] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:02.800] Server  LOG     
+[00:00:03.020] Server  LOG      ✓ Ready in 2.7s
+[00:00:07.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.427] Browser WARN    Phantom was registered as a Standard Wallet. The Wallet Adapter for Phantom can be removed from your app.
+[00:00:07.427] Browser WARN    StreamMiddleware - Unknown response id "solflare-detect-metamask"
+[00:00:07.428] Browser LOG     eth getParams szCQcdHUkaWcC9alMCcNV
+[00:00:07.428] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.428] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:07.428] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139861663}
+[00:00:07.428] Browser ERROR   {}
+[00:00:12.597] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139866832}
+[00:00:22.143] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/parlay color: rgb(120, 120, 120) color: inherit {"dp":"/parlay","o":"http://localhost:3000/parlay","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139876380}
+[00:00:49.877] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139904113}
+[00:01:21.585] Server  LOG      ✓ Compiled in 4ms
+[00:01:21.717] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139935949}
+[00:01:26.119] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/parlay color: rgb(120, 120, 120) color: inherit {"dp":"/parlay","o":"http://localhost:3000/parlay","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139940348}
+[00:01:38.991] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139953223}
+[00:01:49.365] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139963603}
+[00:01:58.715] Browser ERROR   [v0] Error fetching balance: {}
+[00:02:00.316] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139974549}
+[00:02:00.422] Browser ERROR   [v0] Error fetching balance: {}
+[00:02:00.422] Browser ERROR   [v0] Error fetching balance: {}
+[00:02:06.379] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/parlay color: rgb(120, 120, 120) color: inherit {"dp":"/parlay","o":"http://localhost:3000/parlay","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761139980609}
+[00:02:06.483] Browser ERROR   [v0] Error fetching balance: {}
+[00:02:06.483] Browser ERROR   [v0] Error fetching balance: {}
+[00:03:36.664] Server  LOG      ✓ Compiled in 54ms
+[00:03:45.981] Server  LOG      ✓ Compiled in 60ms
+[00:04:00.739] Server  LOG      ✓ Compiled in 75ms
+[00:04:31.764] Server  LOG      ✓ Compiled in 105ms
+[00:05:05.253] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761140159490}
+[00:05:08.125] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/parlay color: rgb(120, 120, 120) color: inherit {"dp":"/parlay","o":"http://localhost:3000/parlay","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761140162361}
+[00:05:14.264] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761140168500}
+[00:06:37.236] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/parlay color: rgb(120, 120, 120) color: inherit {"dp":"/parlay","o":"http://localhost:3000/parlay","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761140251472}
+[00:06:45.919] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761140260156}
