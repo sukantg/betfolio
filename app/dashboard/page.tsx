@@ -7,7 +7,7 @@ export default function DashboardPage() {
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2">My Parlays</h1>
+          <h1 className="text-4xl font-bold mb-2">My Bets</h1>
           <p className="text-muted-foreground">Track your active bets and view your betting history.</p>
         </div>
         <ParlayDashboard />

@@ -136,7 +136,7 @@ export function ParlayBuilder() {
     }
 
     try {
-      const response = await fetch("/api/parlay/place", {
+      const response = await fetch("/api/builder/place", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -150,16 +150,33 @@ export function ParlayBuilder() {
 
       if (!response.ok) throw new Error("Failed to place bet")
 
+      // Save the bet to active bets in localStorage
+      const newBet = {
+        id: `bet_${Date.now()}`,
+        selections: parlaySelections,
+        betAmount: Number(betAmount),
+        combinedOdds,
+        potentialPayout,
+        status: "active",
+        createdAt: new Date().toISOString()
+      }
+
+      // Get existing bets and add the new one
+      const existingBets = JSON.parse(localStorage.getItem("userParlays") || "[]")
+      localStorage.setItem("userParlays", JSON.stringify([...existingBets, newBet]))
+
       toast({
-        title: "Parlay Placed!",
-        description: `Your ${parlaySelections.length}-leg parlay has been placed.`,
+        title: "Bet Placed!",
+        description: `Your ${parlaySelections.length}-leg bet has been placed.`,
       })
 
       setParlaySelections([])
       localStorage.removeItem("parlay")
       setBetAmount("100")
 
+      // Dispatch events to update both builder and dashboard
       window.dispatchEvent(new Event("parlayUpdated"))
+      window.dispatchEvent(new Event("dashboardUpdated"))
     } catch (error) {
       console.error("[v0] Error placing parlay:", error)
       toast({
@@ -251,7 +268,7 @@ export function ParlayBuilder() {
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">Combined Odds</span>
-                <span className="font-semibold text-accent">{combinedOdds.toFixed(2)}x</span>
+                <span className="font-semibold text-primary">{combinedOdds.toFixed(2)}x</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
@@ -282,14 +299,14 @@ export function ParlayBuilder() {
               <div className="space-y-2 p-4 bg-accent/10 rounded-lg border border-accent/20">
                 <div className="flex items-center justify-between">
                   <span className="text-sm">Potential Payout</span>
-                  <span className="font-bold text-lg">${potentialPayout.toFixed(2)}</span>
+                  <span className="font-bold text-lg text-primary">${potentialPayout.toFixed(2)}</span>
                 </div>
-                <div className="flex items-center justify-between text-accent">
-                  <span className="text-sm flex items-center gap-1">
-                    <TrendingUp className="h-3 w-3" />
+                <div className="flex items-center justify-between">
+                  <span className="text-sm flex items-center gap-1 text-green-600 dark:text-green-400 font-semibold">
+                    <TrendingUp className="h-3 w-3 text-green-600 dark:text-green-400" />
                     Potential Profit
                   </span>
-                  <span className="font-semibold">${potentialProfit.toFixed(2)}</span>
+                  <span className="font-bold text-green-600 dark:text-green-400">${potentialProfit.toFixed(2)}</span>
                 </div>
               </div>
             )}
@@ -300,7 +317,7 @@ export function ParlayBuilder() {
               className="w-full gap-2"
               size="lg"
             >
-              Place Parlay Bet
+              Place Bet
               <ArrowRight className="h-4 w-4" />
             </Button>
 

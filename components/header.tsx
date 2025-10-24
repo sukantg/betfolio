@@ -3,9 +3,15 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { useState, useEffect } from "react"
 import { WalletConnect } from "@/components/wallet-connect"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -45,14 +51,48 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium hover:text-accent transition-colors">
+                Bet Types <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/parlay">Parlay</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/moneyline">Moneyline</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/point-spread">Point Spread</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/over-under">Over/Under</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/teaser">Teaser</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/prop">Prop Bet</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/futures">Futures</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/live">Live Betting</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/round-robin">Round Robin</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Link href="/markets" className="text-sm font-medium hover:text-accent transition-colors">
               Markets
             </Link>
             <Link
-              href="/parlay"
+              href="/builder"
               className="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2"
             >
-              Parlay builder
+              Bet builder
               {parlayCount > 0 && (
                 <Badge variant="default" className="h-5 min-w-5 flex items-center justify-center px-1.5">
                   {parlayCount}
@@ -77,6 +117,22 @@ export function Header() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-3 border-t border-border">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium hover:text-accent transition-colors py-2">
+                Bet Types <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>Parlay</DropdownMenuItem>
+                <DropdownMenuItem>Moneyline</DropdownMenuItem>
+                <DropdownMenuItem>Point Spread</DropdownMenuItem>
+                <DropdownMenuItem>Over/Under</DropdownMenuItem>
+                <DropdownMenuItem>Teaser</DropdownMenuItem>
+                <DropdownMenuItem>Prop Bet</DropdownMenuItem>
+                <DropdownMenuItem>Futures</DropdownMenuItem>
+                <DropdownMenuItem>Live Betting</DropdownMenuItem>
+                <DropdownMenuItem>Round Robin</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Link
               href="/markets"
               className="block text-sm font-medium hover:text-accent transition-colors py-2"
@@ -85,11 +141,11 @@ export function Header() {
               Markets
             </Link>
             <Link
-              href="/parlay"
+              href="/builder"
               className="flex items-center gap-2 text-sm font-medium hover:text-accent transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Parlay builder
+              Bet builder
               {parlayCount > 0 && (
                 <Badge variant="default" className="h-5 min-w-5 flex items-center justify-center px-1.5">
                   {parlayCount}

@@ -34,6 +34,17 @@ export function ParlayDashboard() {
 
   useEffect(() => {
     loadParlays()
+    
+    // Listen for dashboard updates when new bets are placed
+    const handleDashboardUpdate = () => {
+      loadParlays()
+    }
+    
+    window.addEventListener("dashboardUpdated", handleDashboardUpdate)
+    
+    return () => {
+      window.removeEventListener("dashboardUpdated", handleDashboardUpdate)
+    }
   }, [])
 
   function loadParlays() {
@@ -145,8 +156,8 @@ export function ParlayDashboard() {
       <div className="grid gap-4 md:grid-cols-3">
         <Card className="p-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 bg-accent/10 rounded-lg">
-              <DollarSign className="h-5 w-5 text-accent" />
+            <div className="p-3 bg-primary/10 rounded-lg">
+              <DollarSign className="h-5 w-5 text-primary" />
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Total Wagered</p>
@@ -157,8 +168,8 @@ export function ParlayDashboard() {
 
         <Card className="p-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 bg-accent/10 rounded-lg">
-              <TrendingUp className="h-5 w-5 text-accent" />
+            <div className="p-3 bg-green-100 dark:bg-green-900/20 rounded-lg">
+              <TrendingUp className="h-5 w-5 text-green-600 dark:text-green-400" />
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Total Won</p>
@@ -169,8 +180,8 @@ export function ParlayDashboard() {
 
         <Card className="p-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 bg-accent/10 rounded-lg">
-              <CheckCircle2 className="h-5 w-5 text-accent" />
+            <div className="p-3 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+              <CheckCircle2 className="h-5 w-5 text-blue-600 dark:text-blue-400" />
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Win Rate</p>
@@ -217,7 +228,7 @@ export function ParlayDashboard() {
                     </div>
                     <div className="text-right">
                       <p className="text-sm text-muted-foreground">Potential Payout</p>
-                      <p className="text-xl font-bold text-accent">${parlay.potentialPayout.toFixed(2)}</p>
+                      <p className="text-xl font-bold text-primary">${parlay.potentialPayout.toFixed(2)}</p>
                     </div>
                   </div>
 
@@ -279,7 +290,7 @@ export function ParlayDashboard() {
                     <div className="text-right">
                       <p className="text-sm text-muted-foreground">{parlay.status === "won" ? "Payout" : "Lost"}</p>
                       <p
-                        className={`text-xl font-bold ${parlay.status === "won" ? "text-accent" : "text-destructive"}`}
+                        className={`text-xl font-bold ${parlay.status === "won" ? "text-green-600 dark:text-green-400" : "text-destructive"}`}
                       >
                         {parlay.status === "won" ? "+" : "-"}$
                         {parlay.status === "won" ? parlay.potentialPayout.toFixed(2) : parlay.betAmount.toFixed(2)}
