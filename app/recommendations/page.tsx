@@ -14,13 +14,46 @@ interface RecommendationsProps {
   searchParams: { id: string }
 }
 
-export default async function RecommendationsPage({ searchParams }: RecommendationsProps) {
-  // In a real app, you'd fetch this from a database using the ID
-  // For now, we'll make a direct API call
-  const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/analyze-preferences/${searchParams.id}`)
-  const recommendations = await response.json()
+// Force dynamic rendering
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
 
-  return (
+export default async function RecommendationsPage({ searchParams }: RecommendationsProps) {
+  // Handle missing ID
+  if (!searchParams.id) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main className="container py-12">
+          <div className="mx-auto max-w-4xl text-center">
+            <h1 className="text-3xl font-bold mb-4">No Recommendations Found</h1>
+            <p className="text-muted-foreground mb-8">Please go back and complete the onboarding process.</p>
+            <Button asChild size="lg" className="gap-2">
+              <Link href="/onboarding">Complete Onboarding</Link>
+            </Button>
+          </div>
+        </main>
+      </div>
+    )
+  }
+
+  // Build the URL properly
+  const baseUrl = process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}` 
+    : process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  
+  try {
+    const response = await fetch(`${baseUrl}/api/analyze-preferences/${searchParams.id}`, {
+      cache: 'no-store'
+    })
+    
+    if (!response.ok) {
+      throw new Error('Failed to fetch recommendations')
+    }
+    
+    const recommendations = await response.json()
+
+    return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="container py-12">
@@ -119,5 +152,22 @@ export default async function RecommendationsPage({ searchParams }: Recommendati
         </div>
       </main>
     </div>
-  )
+    )
+  } catch (error) {
+    console.error('Error loading recommendations:', error)
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main className="container py-12">
+          <div className="mx-auto max-w-4xl text-center">
+            <h1 className="text-3xl font-bold mb-4">Error Loading Recommendations</h1>
+            <p className="text-muted-foreground mb-8">Something went wrong. Please try again.</p>
+            <Button asChild size="lg" className="gap-2">
+              <Link href="/onboarding">Try Again</Link>
+            </Button>
+          </div>
+        </main>
+      </div>
+    )
+  }
 }

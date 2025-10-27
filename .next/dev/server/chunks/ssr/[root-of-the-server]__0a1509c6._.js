@@ -110,8 +110,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Solana$2f$betfolio$2f$lib$2f
 ;
 ;
 const metadata = {
-    title: "Betfolio - Combine Polymarket Bets",
-    description: "Multiply your odds by combining multiple Polymarket prediction markets into single parlay tickets",
+    title: "Betfolio - Your Complete Betting Platform",
+    description: "Explore all types of betting on Solana - from moneylines and point spreads to parlays and prop bets. Fast, secure, and transparent betting on every market.",
     generator: "v0.app"
 };
 function RootLayout({ children }) {
