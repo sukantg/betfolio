@@ -122,15 +122,33 @@ export function Header() {
                 Bet Types <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem>Parlay</DropdownMenuItem>
-                <DropdownMenuItem>Moneyline</DropdownMenuItem>
-                <DropdownMenuItem>Point Spread</DropdownMenuItem>
-                <DropdownMenuItem>Over/Under</DropdownMenuItem>
-                <DropdownMenuItem>Teaser</DropdownMenuItem>
-                <DropdownMenuItem>Prop Bet</DropdownMenuItem>
-                <DropdownMenuItem>Futures</DropdownMenuItem>
-                <DropdownMenuItem>Live Betting</DropdownMenuItem>
-                <DropdownMenuItem>Round Robin</DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/parlay" onClick={() => setMobileMenuOpen(false)}>Parlay</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/moneyline" onClick={() => setMobileMenuOpen(false)}>Moneyline</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/point-spread" onClick={() => setMobileMenuOpen(false)}>Point Spread</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/over-under" onClick={() => setMobileMenuOpen(false)}>Over/Under</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/teaser" onClick={() => setMobileMenuOpen(false)}>Teaser</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/prop" onClick={() => setMobileMenuOpen(false)}>Prop Bet</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/futures" onClick={() => setMobileMenuOpen(false)}>Futures</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/live" onClick={() => setMobileMenuOpen(false)}>Live Betting</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/bet-types/round-robin" onClick={() => setMobileMenuOpen(false)}>Round Robin</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Link

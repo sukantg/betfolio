@@ -8,12 +8,12 @@ export function Hero() {
       <div className="container py-24 md:py-32 lg:py-40">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-6 text-balance text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-            The Future of Betting on <span className="bg-linear-to-r from-[#4C1D95] to-[#6D28D9] bg-clip-text text-transparent">Solana</span>
+            Your Gateway to All Types of <span className="bg-linear-to-r from-[#4C1D95] to-[#6D28D9] bg-clip-text text-transparent">Betting</span> on Solana
           </h1>
 
           <p className="mb-10 text-balance text-lg text-muted-foreground sm:text-xl lg:text-2xl leading-relaxed">
-            Experience lightning-fast bets, instant payouts, and the lowest fees in the industry. 
-            Built on Solana for unmatched speed and security.
+            From simple moneylines to complex parlays, explore every betting strategy on the fastest blockchain.
+            Experience instant settlement and transparent odds on all your favorite bet types.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -22,13 +22,13 @@ export function Hero() {
               className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-base"
               asChild
             >
-              <Link href="/onboarding">
-                Start Betting
+              <Link href="/markets">
+                Explore Markets
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="h-12 px-8 text-base bg-transparent" asChild>
-              <Link href="/#how-it-works">Learn More</Link>
+              <Link href="/#how-it-works">Learn About Bet Types</Link>
             </Button>
           </div>
         </div>
