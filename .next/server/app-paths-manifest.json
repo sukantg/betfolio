@@ -1,6 +1,0 @@
-{
-  "/api/polymarket/route": "app/api/polymarket/route.js",
-  "/api/optimize-weights/route": "app/api/optimize-weights/route.js",
-  "/page": "app/page.js",
-  "/builder/page": "app/builder/page.js"
-}
