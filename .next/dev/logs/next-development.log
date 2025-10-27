@@ -1,22 +1,10 @@
-[00:00:00.874] Server  LOG      ✓ Ready in 596ms
-[00:00:04.698] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.859] Browser WARN    StreamMiddleware - Unknown response id "solflare-detect-metamask"
-[00:00:04.859] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:04.859] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:04.859] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761314747730}
-[00:01:34.091] Server  LOG      ✓ Compiled in 0ms
-[00:01:39.595] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/onboarding color: rgb(120, 120, 120) color: inherit {"dp":"/onboarding","o":"http://localhost:3000/onboarding","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761314842463}
-[00:02:35.248] Server  LOG      ✓ Compiled in 104ms
-[00:03:34.369] Server  LOG      ✓ Compiled in 51ms
-[00:05:40.610] Server  LOG      ✓ Compiled in 87ms
-[00:05:53.144] Server  LOG      ✓ Compiled in 45ms
-[00:06:33.680] Server  LOG      ✓ Compiled in 77ms
-[00:06:46.737] Server  LOG      ✓ Compiled in 38ms
-[00:09:49.816] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315332764}
-[00:09:52.291] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315335240}
-[00:09:54.459] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/onboarding color: rgb(120, 120, 120) color: inherit {"dp":"/onboarding","o":"http://localhost:3000/onboarding","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315337407}
-[00:09:57.032] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315339979}
-[00:09:58.949] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315341899}
-[00:10:03.411] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315346359}
-[00:10:09.453] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/builder color: rgb(120, 120, 120) color: inherit {"dp":"/builder","o":"http://localhost:3000/builder","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315352399}
-[00:10:11.868] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761315354816}
+[00:00:00.878] Server  LOG      ✓ Ready in 595ms
+[00:00:06.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.252] Browser WARN    Phantom was registered as a Standard Wallet. The Wallet Adapter for Phantom can be removed from your app.
+[00:00:06.357] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.357] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:06.358] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761567564156}
+[00:00:12.912] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761567570703}
+[00:00:14.404] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/builder color: rgb(120, 120, 120) color: inherit {"dp":"/builder","o":"http://localhost:3000/builder","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761567572200}
+[00:00:15.986] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761567573759}
+[00:00:19.115] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/markets color: rgb(120, 120, 120) color: inherit {"dp":"/markets","o":"http://localhost:3000/markets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1761567576910}
