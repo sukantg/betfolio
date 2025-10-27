@@ -42,10 +42,7 @@ export function Header() {
   <header className="border-b border-border bg-background/95 backdrop-blur sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-accent flex items-center justify-center font-bold text-accent-foreground">
-              B
-            </div>
+          <Link href="/" className="flex items-center">
             <span className="font-bold text-lg">Betfolio</span>
           </Link>
 
