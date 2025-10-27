@@ -43,7 +43,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
-            <span className="font-bold text-lg">Betfolio</span>
+            <span className="font-bold text-4xl">Betfolio</span>
           </Link>
 
           {/* Desktop Navigation */}
