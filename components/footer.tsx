@@ -52,7 +52,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-border/40 pt-8 text-center text-sm text-muted-foreground">
-          <p>Built for the Polymarket Hackathon. Not financial advice. Bet responsibly.</p>
+          <p>Built for the Solana Cyperpunk Hackathon. Not financial advice. Bet responsibly.</p>
         </div>
       </div>
     </footer>
