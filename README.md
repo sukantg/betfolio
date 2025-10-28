@@ -9,8 +9,6 @@ The platform delivers **instant on-chain settlements**, **low fees**, and **tran
 
 **Live Demo:** [https://betfolio-live.vercel.app/](https://betfolio-live.vercel.app/)
 
-**Live Demo:** <a href="https://betfolio-live.vercel.app/" target="_blank" rel="noopener noreferrer">https://betfolio-live.vercel.app/</a>
-
 ## What Is It?
 
 Betfolio combines the thrill of **sports betting** with the **transparency of Web3**.  
