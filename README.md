@@ -7,9 +7,7 @@ Betfolio is a fast, modern web app built on **Solana** that introduces multiple 
 For the MVP, Betfolio implements **Point Spread Betting**, where users bet on the **margin of victory** rather than just the winner.  
 The platform delivers **instant on-chain settlements**, **low fees**, and **transparent wagers** through **MagicBlock’s Ephemeral Rollups**, enabling **sub-second confirmation** — a first for decentralized betting.
 
-**Live Demo:** [https://betfolio-live.vercel.app/](https://betfolio-live.vercel.app/)
-
----
+**Live Demo:** <a href="https://betfolio-live.vercel.app/" target="_blank" rel="noopener noreferrer">https://betfolio-live.vercel.app/</a>
 
 ## What Is It?
 
