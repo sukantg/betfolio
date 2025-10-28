@@ -1,10 +1,9 @@
-[features]
-resolution = true
-seeds = true
 [programs.localnet]
-point_spread = "PointSpred111111111111111111111111111111111"
+betfolio_spread = "5HkXrfVJJEmhz89sajAk62tbny4MgKQFPLpdzo3E95Fg"
+
 [provider]
 cluster = "localnet"
 wallet = "~/.config/solana/id.json"
-[scripts]
-test = "node tests/point_spread.spec.ts"
+
+[workspace]
+members = ["programs/*"]
