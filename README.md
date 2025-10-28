@@ -62,14 +62,14 @@ With **MagicBlock Ephemeral Rollups**, bets confirm and settle in under a second
 
 ## Tech Stack
 
-| Layer               | Tools                                                                               |
-| ------------------- | ----------------------------------------------------------------------------------- |
-| **Frontend**        | Next.js + Tailwind                                                                  |
-| **Smart Contract**  | Anchor (Rust)                                                                       |
-| **Blockchain**      | Solana                                                                              |
-| **Real-Time Layer** | MagicBlock Ephemeral Rollups                                                        |
-| **Data Source**     | Polymarket API                                                                      |
-| **Infra & Tools**   | Vercel, GitHub, Visual Studio Code, TryNoah.ai:contentReference[oaicite:7]{index=7} |
+| Layer               | Tools                                          |
+| ------------------- | ---------------------------------------------- |
+| **Frontend**        | Next.js + Tailwind                             |
+| **Smart Contract**  | Anchor (Rust)                                  |
+| **Blockchain**      | Solana                                         |
+| **Real-Time Layer** | MagicBlock Ephemeral Rollups                   |
+| **Data Source**     | Polymarket API                                 |
+| **Infra & Tools**   | Vercel, GitHub, Visual Studio Code, TryNoah.ai |
 
 ---
 
