@@ -1,6 +1,5 @@
-# 🏀 Betfolio — Real-Time Point Spread Betting on Solana
+# Betfolio — Your betting portfolio on Solana
 
-> **Real Sports Betting, Not Just Predictions.**  
 > Built for the **Solana Colosseum (Cypherpunk) Hackathon** with **MagicBlock Ephemeral Rollups (ER)** integration.
 
 Betfolio is a fast, modern web app built on **Solana** that introduces multiple styles of decentralized betting — **moneylines, spreads, parlays, and props** — on top of **Polymarket**.
@@ -57,30 +56,7 @@ With **MagicBlock Ephemeral Rollups**, bets confirm and settle in under a second
 - **Parlay & Multi-Leg Bets:** Combine multiple bets into one ticket for higher potential payouts.
 - **AI-Powered Bet Allocation:** Suggest optimal bet allocations based on historical data and user risk profile.
 - **Private Bets with PER:** Use **MagicBlock Private Ephemeral Rollups** for privacy-preserving betting.
-- **Cross-Chain Markets:** Integrate **LayerZero** to enable betting across Solana, Base, Polygon, and Avalanche:contentReference[oaicite:4]{index=4}.
-
----
-
-## Market Opportunity
-
-| Metric  | Definition                                   | Estimate     |
-| ------- | -------------------------------------------- | ------------ |
-| **TAM** | Total global sports betting industry         | ≈ **$250B+** |
-| **SAM** | Online + crypto-accessible betting segment   | ≈ **$12B**   |
-| **SOM** | Realistically capturable market share (1–2%) | ≈ **$150M**  |
-
-> The global sports betting market was valued at $100–110B in 2024 and is projected to reach $230–300B by 2032, growing at ~10–11% CAGR:contentReference[oaicite:5]{index=5}.
-
----
-
-## Business Model
-
-| Revenue Stream                      | Description                                                                                                               |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **1. Commission on Each Bet**       | 1–2% protocol fee per wager (vs 5–10% in traditional sportsbooks).                                                        |
-| **2. Liquidity Partner Sharing**    | Integrate with **Polymarket** and earn a share of trading volume.                                                         |
-| **3. Premium Analytics & Insights** | Subscription for advanced odds tracking and AI recommendations.                                                           |
-| **4. Affiliate Partnerships**       | Collaborate with DAOs, sports influencers, and fantasy leagues to onboard new users:contentReference[oaicite:6]{index=6}. |
+- **Cross-Chain Markets:** Integrate **LayerZero** to enable betting across Solana, Base, Polygon, and Avalanche.
 
 ---
 
